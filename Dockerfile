@@ -2,7 +2,7 @@ FROM ruby:2.2-alpine
 MAINTAINER arobson <arobson@gmail.com>
 
 ENV BUILD_PACKAGES="curl-dev build-base openssh" \
-    DEV_PACKAGES="tzdata libxml2 libxml2-dev libxslt libxslt-dev mysql-client \
+    DEV_PACKAGES="tzdata libxml2 libxml2-dev libxslt libxslt-dev mysql-client qt5-qtwebkit qt-dev\
                   imagemagick imagemagick-dev postgresql-dev mysql-dev sqlite-dev git gcc g++ make nodejs" 
 
 RUN apk --update --upgrade add $BUILD_PACKAGES $DEV_PACKAGES
