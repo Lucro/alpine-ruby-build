@@ -1,4 +1,4 @@
-FROM ruby:2.2-alpine
+FROM ruby:2.3.1-alpine
 MAINTAINER arobson <arobson@gmail.com>
 
 ENV BUILD_PACKAGES="curl-dev build-base openssh" \

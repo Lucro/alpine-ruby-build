@@ -3,12 +3,9 @@ pipeline:
   docker:
     image: plugins/docker
     debug: true
-    username: ${DOCKER_USERNAME}
-    password: ${DOCKER_PASSWORD}
-    email: ${DOCKER_EMAIL}
     repo: arobson/alpine-ruby-build
     tags:
       - latest
-      - "2.2.5"
+      - "2.3.1"
     when:
       branch: master
