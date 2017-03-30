@@ -3,7 +3,7 @@ pipeline:
   docker:
     image: plugins/docker
     debug: true
-    repo: arobson/alpine-ruby-build
+    repo: lucro/alpine-ruby-build
     tags:
       - latest
       - "2.3.1"
