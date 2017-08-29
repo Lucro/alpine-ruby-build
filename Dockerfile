@@ -1,9 +1,9 @@
-FROM ruby:2.3.1-alpine
+FROM ruby:2.4.1-alpine
 MAINTAINER Lucro Engineering <dev@lucro.com>
 
 ENV BUILD_PACKAGES="curl-dev build-base openssh curl" \
     DEV_PACKAGES="tzdata libxml2 libxml2-dev libxslt libxslt-dev mysql-client qt5-qtwebkit qt-dev\
-                  imagemagick imagemagick-dev postgresql-dev mysql-dev sqlite-dev git gcc g++ make nodejs" 
+                  imagemagick imagemagick-dev postgresql-dev mysql-dev sqlite-dev git gcc g++ make nodejs"
 
 RUN apk --update --upgrade add $BUILD_PACKAGES $DEV_PACKAGES
 RUN rm /var/cache/apk/*
